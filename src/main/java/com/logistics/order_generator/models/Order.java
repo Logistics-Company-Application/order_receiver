@@ -1,4 +1,4 @@
-package com.logistics.order_generator;
+package com.logistics.order_generator.models;
 
 import lombok.*;
 
