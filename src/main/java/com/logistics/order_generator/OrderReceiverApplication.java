@@ -6,10 +6,10 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @EnableScheduling
 @SpringBootApplication
-public class OrderGeneratorApplication {
+public class OrderReceiverApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(OrderGeneratorApplication.class, args);
+		SpringApplication.run(OrderReceiverApplication.class, args);
 	}
 
 }
