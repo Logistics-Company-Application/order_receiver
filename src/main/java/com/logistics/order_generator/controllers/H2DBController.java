@@ -2,17 +2,16 @@ package com.logistics.order_generator.controllers;
 
 import com.logistics.order_generator.models.OrderDTO;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Map;
 
 @RestController
 @RequestMapping("/h2")
+@CrossOrigin(origins = "http://localhost:4200")
 public class H2DBController {
     private static final String FIND_ALL_ORDERS_SQL = "select * from orders";
     private static final String FIND_ALL_ORDERS_BY_BUYER_SQL = "select * from orders where buyer_name = :buyerName";
